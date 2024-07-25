@@ -5,6 +5,8 @@ import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Login from './Component/Login';
+import Dashboard from './Component/Dashboard';
+
 
 function App() {
   return (
@@ -13,7 +15,9 @@ function App() {
         <ToastContainer/>
         <Routes>
           <Route path='/' element={<Form />} />
-          <Route path="/Login" element={<Login />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/Dashboard" element={<Dashboard/>} />
+
         </Routes>
       </Router>
     </>
